@@ -1,0 +1,2822 @@
+{
+  "summary": {
+    "system": "qtharness",
+    "status": "green",
+    "passed": 657,
+    "failed": 0,
+    "skipped": 3,
+    "total": 660,
+    "duration_s": 21.64,
+    "commit": "55c538ccee13",
+    "run_id": "42759667167",
+    "source": "github-actions",
+    "run_at": "2026-11-10T05:03:50Z"
+  },
+  "counts": {
+    "passed": 657,
+    "failed": 0,
+    "error": 0,
+    "skipped": 3
+  },
+  "total": 660,
+  "duration_s": 21.64,
+  "files": {
+    "tests/test_account_reconcile.py": {
+      "passed": 9
+    },
+    "tests/test_account_snapshots.py": {
+      "passed": 7
+    },
+    "tests/test_alerts.py": {
+      "passed": 7
+    },
+    "tests/test_algo_compliance.py": {
+      "passed": 9
+    },
+    "tests/test_arm_expiry.py": {
+      "passed": 12
+    },
+    "tests/test_backtest_engine.py": {
+      "passed": 9
+    },
+    "tests/test_bhavcopy.py": {
+      "passed": 9
+    },
+    "tests/test_broker_interface.py": {
+      "passed": 6
+    },
+    "tests/test_ca_detect.py": {
+      "passed": 19
+    },
+    "tests/test_cash_pnl.py": {
+      "passed": 9
+    },
+    "tests/test_chart_panes.py": {
+      "passed": 19
+    },
+    "tests/test_corporate_actions.py": {
+      "passed": 6
+    },
+    "tests/test_costs.py": {
+      "passed": 13
+    },
+    "tests/test_costs_calculator_reconciliation.py": {
+      "passed": 4
+    },
+    "tests/test_costs_golden.py": {
+      "passed": 6
+    },
+    "tests/test_cross_platform.py": {
+      "passed": 22
+    },
+    "tests/test_dashboard_db_resilience.py": {
+      "passed": 3,
+      "skipped": 2
+    },
+    "tests/test_db_contention.py": {
+      "passed": 4
+    },
+    "tests/test_execution_engine.py": {
+      "passed": 30
+    },
+    "tests/test_factor_strategy.py": {
+      "passed": 16
+    },
+    "tests/test_factors_ic.py": {
+      "passed": 9
+    },
+    "tests/test_factors_ops.py": {
+      "passed": 16
+    },
+    "tests/test_factors_panel.py": {
+      "passed": 9
+    },
+    "tests/test_factors_zoo.py": {
+      "passed": 50
+    },
+    "tests/test_futures_options.py": {
+      "passed": 13
+    },
+    "tests/test_gap.py": {
+      "passed": 6
+    },
+    "tests/test_gtt.py": {
+      "passed": 21
+    },
+    "tests/test_india_factors.py": {
+      "passed": 12,
+      "skipped": 1
+    },
+    "tests/test_indicators.py": {
+      "passed": 15
+    },
+    "tests/test_instruments_snapshot_atomicity.py": {
+      "passed": 7
+    },
+    "tests/test_journal_attribution_improvement.py": {
+      "passed": 11
+    },
+    "tests/test_kill_switch_live_broker.py": {
+      "passed": 13
+    },
+    "tests/test_kite_auth.py": {
+      "passed": 6
+    },
+    "tests/test_leakage.py": {
+      "passed": 10
+    },
+    "tests/test_marketdata_instruments_historical.py": {
+      "passed": 12
+    },
+    "tests/test_marketdata_throttle_quotes.py": {
+      "passed": 11
+    },
+    "tests/test_multiple_testing.py": {
+      "passed": 13
+    },
+    "tests/test_paper_broker.py": {
+      "passed": 13
+    },
+    "tests/test_paper_persistence.py": {
+      "passed": 4
+    },
+    "tests/test_portfolio_backtest.py": {
+      "passed": 11
+    },
+    "tests/test_portfolio_risk.py": {
+      "passed": 22
+    },
+    "tests/test_settings_and_trials.py": {
+      "passed": 6
+    },
+    "tests/test_sma_and_metrics.py": {
+      "passed": 7
+    },
+    "tests/test_splits_dsr_lock.py": {
+      "passed": 28
+    },
+    "tests/test_static_ip_gate.py": {
+      "passed": 9
+    },
+    "tests/test_store_adjusted_bars.py": {
+      "passed": 4
+    },
+    "tests/test_store_and_universe.py": {
+      "passed": 3
+    },
+    "tests/test_strategy_library.py": {
+      "passed": 36
+    },
+    "tests/test_surveillance.py": {
+      "passed": 23
+    },
+    "tests/test_tradeable_universe.py": {
+      "passed": 11
+    },
+    "tests/test_universe_fundamentals.py": {
+      "passed": 27
+    }
+  },
+  "tests": [
+    {
+      "id": "tests/test_account_reconcile.py::test_duplicate_journal_rows_cannot_double_match_one_broker_trade",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_account_reconcile.py::test_end_to_end_live_validation_fill_reconciles",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_account_reconcile.py::test_exact_match_is_clean",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_account_reconcile.py::test_paper_log_adapter_skips_rows_without_fill_essentials",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_account_reconcile.py::test_price_beyond_tolerance_is_flagged_not_dropped",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_account_reconcile.py::test_price_within_tolerance_matches",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_account_reconcile.py::test_side_qty_and_date_are_hard_keys",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_account_reconcile.py::test_trades_log_adapter_and_date_filter",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_account_reconcile.py::test_unmatched_sides_both_reported",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_account_snapshots.py::test_empty_payloads_are_fine",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_account_snapshots.py::test_holdings_snapshot_idempotent_and_append_only",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_account_snapshots.py::test_latest_holdings_returns_newest_snapshot_only",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_account_snapshots.py::test_margins_snapshot_both_segments",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_account_snapshots.py::test_orders_log_keeps_rejections_and_status_history",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_account_snapshots.py::test_positions_snapshot_takes_net_book_only",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_account_snapshots.py::test_trades_log_idempotent_on_trade_id",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_alerts.py::test_cash_floor",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_alerts.py::test_concentration_alert_reports_effective_names",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_alerts.py::test_drift_alerts_one_per_symbol",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_alerts.py::test_missing_data_never_fires",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_alerts.py::test_price_rules_fire_and_stay_quiet",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_alerts.py::test_telegram_sink_batches_one_message",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_alerts.py::test_telegram_sink_inactive_without_config_and_never_raises",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_algo_compliance.py::test_all_enforced_rules_pass",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_algo_compliance.py::test_every_order_is_tagged",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_algo_compliance.py::test_market_protection_present_on_both_order_types[check_market_protection_on_market]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_algo_compliance.py::test_market_protection_present_on_both_order_types[check_market_protection_on_slm]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_algo_compliance.py::test_probes_restore_the_live_arm_env_var",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_algo_compliance.py::test_rate_limit_is_strictly_under_the_exchange_cap",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_algo_compliance.py::test_static_ip_check_is_advisory_and_reads_env",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_algo_compliance.py::test_we_do_not_slice_orders",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_algo_compliance.py::test_zero_protection_is_refused_locally",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_arm_expiry.py::TestDatedArm::test_bare_magic_still_arms_but_is_labelled_undated",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_arm_expiry.py::TestDatedArm::test_dated_for_today_arms",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_arm_expiry.py::TestDatedArm::test_dated_for_tomorrow_does_not_arm",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_arm_expiry.py::TestDatedArm::test_dated_for_yesterday_does_not_arm",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_arm_expiry.py::TestDatedArm::test_malformed_date_fails_closed",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_arm_expiry.py::TestDatedArm::test_whitespace_is_not_forgiven",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_arm_expiry.py::TestDatedArm::test_wrong_phrase_with_valid_date_does_not_arm",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_arm_expiry.py::TestExpiredArmMessage::test_expired_says_expired_not_disabled",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_arm_expiry.py::TestExpiredArmMessage::test_unarmed_keeps_the_original_message",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_arm_expiry.py::TestGttArmSharesTheRules::test_dated_gtt_arm",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_arm_expiry.py::TestGttArmSharesTheRules::test_expired_gtt_arm_refuses",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_arm_expiry.py::TestGttArmSharesTheRules::test_live_arm_does_not_arm_gtt",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_backtest_engine.py::TestCircuitRefusal::test_locked_day_refuses_fill_and_retries_next_day",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_backtest_engine.py::TestCostWiring::test_affordability_never_goes_negative_cash",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_backtest_engine.py::TestCostWiring::test_equity_reflects_exact_model_charges",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_backtest_engine.py::TestEngineLookahead::test_engine_rejects_shorting_weights",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_backtest_engine.py::TestEngineLookahead::test_engine_rejects_unsorted_bars",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_backtest_engine.py::TestEngineLookahead::test_trades_before_t_invariant_to_future_perturbation",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_backtest_engine.py::TestNextBarSemantics::test_no_same_day_fill_ever",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_backtest_engine.py::TestNextBarSemantics::test_signal_on_day_t_fills_at_open_of_t_plus_1",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_backtest_engine.py::TestNextBarSemantics::test_slippage_worsens_buy_fill",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_bhavcopy.py::TestEpochParsers::test_absurd_dates_refused_not_ingested",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_bhavcopy.py::TestEpochParsers::test_epochs_share_one_schema",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_bhavcopy.py::TestEpochParsers::test_legacy_normalises",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_bhavcopy.py::TestEpochParsers::test_two_digit_year_day_parses_correctly",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_bhavcopy.py::TestEpochParsers::test_udiff_normalises",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_bhavcopy.py::TestEpochParsers::test_unknown_header_refused",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_bhavcopy.py::TestUrls::test_cutover_boundary",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_bhavcopy.py::TestUrls::test_legacy_url",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_bhavcopy.py::TestUrls::test_udiff_url",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_broker_interface.py::test_buy_then_sell_leaves_flat_position",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_broker_interface.py::test_cash_reflects_pnl_minus_costs",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_broker_interface.py::test_fills_carry_positive_charges",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_broker_interface.py::test_limit_orders_not_yet_supported",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_broker_interface.py::test_market_order_with_zero_protection_is_rejected",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_broker_interface.py::test_missing_price_raises",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_ca_detect.py::test_a_break_across_missing_data_is_not_an_action",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_ca_detect.py::test_a_collapse_with_a_volume_spike_is_still_not_a_split",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_ca_detect.py::test_a_genuine_collapse_is_not_treated_as_a_split",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_ca_detect.py::test_a_move_that_is_not_a_textbook_ratio_goes_to_review",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_ca_detect.py::test_a_normal_long_weekend_still_counts_as_adjacent",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_ca_detect.py::test_adjusted_feed_confirms_and_sharpens_the_factor",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_ca_detect.py::test_adjusted_feed_disagreement_demotes_to_review",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_ca_detect.py::test_etf_hundred_to_one_unit_split",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_ca_detect.py::test_limit_moves_are_below_the_break_threshold",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_ca_detect.py::test_missing_adjusted_feed_leaves_the_candidate_untouched",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_ca_detect.py::test_multiple_actions_in_one_history_are_all_found",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_ca_detect.py::test_one_for_one_bonus_gives_factor_two",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_ca_detect.py::test_ordinary_volatility_is_ignored_entirely",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_ca_detect.py::test_reverse_split_is_found_as_a_sub_one_factor",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_ca_detect.py::test_short_history_still_works_without_windows",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_ca_detect.py::test_source_string_records_how_the_action_was_inferred",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_ca_detect.py::test_ten_for_one_split_is_found_with_the_right_factor",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_ca_detect.py::test_the_ex_date_move_does_not_have_to_be_exact",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_ca_detect.py::test_zero_and_negative_prices_are_skipped_not_crashed",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_cash_pnl.py::TestCNCNoShort::test_oversell_raises",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_cash_pnl.py::TestCNCNoShort::test_sell_with_nothing_held_raises",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_cash_pnl.py::TestLongRealisation::test_buy_charges_capitalised_weighted",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_cash_pnl.py::TestLongRealisation::test_full_exit_resets_basis",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_cash_pnl.py::TestLongRealisation::test_partial_sale_realizes_average_cost",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_cash_pnl.py::TestLongRealisation::test_unrealized_marks_against_basis",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_cash_pnl.py::TestMISShorts::test_book_flags_open_mis_at_eod",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_cash_pnl.py::TestMISShorts::test_crossing_zero_splits_fill",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_cash_pnl.py::TestMISShorts::test_short_then_cover",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_chart_panes.py::TestLabels::test_daily_labels_are_distinct_dates",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_chart_panes.py::TestLabels::test_daily_labels_carry_no_time",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_chart_panes.py::TestLabels::test_intraday_labels_carry_the_time",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_chart_panes.py::TestPaneGuards::test_all_nan_indicator_draws_no_pane",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_chart_panes.py::TestPaneGuards::test_bands_are_drawn_when_asked",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_chart_panes.py::TestPaneGuards::test_close_only_frame_returns_none",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_chart_panes.py::TestPaneGuards::test_empty_frame_returns_none",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_chart_panes.py::TestPaneGuards::test_zero_volume_draws_no_empty_pane",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_chart_panes.py::TestSessionAxis::test_data_order_is_preserved",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_chart_panes.py::TestSessionAxis::test_every_pane_shares_the_axis_field",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_chart_panes.py::TestSessionAxis::test_x_is_ordinal_not_temporal",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_chart_panes.py::TestSourceCoverage::test_falls_through_to_live_when_nothing_is_stored",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_chart_panes.py::TestSourceCoverage::test_kite_wins_a_tie",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_chart_panes.py::TestSourceCoverage::test_kite_wins_when_it_has_more",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_chart_panes.py::TestSourceCoverage::test_partial_kite_backfill_loses_to_full_bhavcopy",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_chart_panes.py::TestWindowSpans::test_daily_windows_are_trading_days",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_chart_panes.py::TestWindowSpans::test_every_window_is_distinct_per_timeframe",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_chart_panes.py::TestWindowSpans::test_intraday_windows_scale_by_bars_per_session",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_chart_panes.py::TestWindowSpans::test_max_always_means_everything",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_corporate_actions.py::TestAdjustment::test_LEAK_future_action_invisible_before_its_ex_date",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_corporate_actions.py::TestAdjustment::test_LEAK_prices_beyond_as_of_refused",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_corporate_actions.py::TestAdjustment::test_actions_compound",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_corporate_actions.py::TestAdjustment::test_bonus_halves_pre_ex_prices",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_corporate_actions.py::TestAdjustment::test_dividend_kind_allowed_but_factor_positive_enforced",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_corporate_actions.py::TestAdjustment::test_split_factor",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_costs.py::test_delivery_has_zero_brokerage",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_costs.py::test_delivery_stt_applies_to_both_sides",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_costs.py::test_dp_charge_only_on_delivery_sell",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_costs.py::test_everything_is_decimal_not_float",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_costs.py::test_gst_base_is_brokerage_plus_txn_plus_sebi",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_costs.py::test_intraday_brokerage_cap_binds_on_large_orders",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_costs.py::test_intraday_brokerage_is_percentage_on_small_orders",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_costs.py::test_intraday_stt_is_sell_side_only",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_costs.py::test_options_brokerage_is_flat_per_leg",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_costs.py::test_round_trip_sums_two_legs",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_costs.py::test_stamp_duty_is_buy_side_only",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_costs.py::test_stt_is_rounded_to_nearest_rupee",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_costs.py::test_total_is_sum_of_components",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_costs_calculator_reconciliation.py::test_delivery_buy1000_sell1010_qty100",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_costs_calculator_reconciliation.py::test_futures_buy1000_sell101_qty100",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_costs_calculator_reconciliation.py::test_intraday_buy1000_sell1010_qty400",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_costs_calculator_reconciliation.py::test_options_buy100_sell110_qty100",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_costs_golden.py::test_costs_dominate_small_options_trades",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_costs_golden.py::test_golden_delivery_round_trip",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_costs_golden.py::test_golden_futures_round_trip",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_costs_golden.py::test_golden_intraday_round_trip",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_costs_golden.py::test_golden_options_round_trip",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_costs_golden.py::test_rates_were_verified_recently_enough",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_cross_platform.py::TestGitignoreProtectsPerMachineState::test_operator_state_is_gitignored[.env]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_cross_platform.py::TestGitignoreProtectsPerMachineState::test_operator_state_is_gitignored[.kite_token.json]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_cross_platform.py::TestGitignoreProtectsPerMachineState::test_operator_state_is_gitignored[data/journal/]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_cross_platform.py::TestGitignoreProtectsPerMachineState::test_operator_state_is_gitignored[data/store/]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_cross_platform.py::TestLaunchersStayPosix::test_gitattributes_pins_command_files_to_lf",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_cross_platform.py::TestLaunchersStayPosix::test_launcher_has_lf_endings_and_a_shebang[Connect To GitHub.command]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_cross_platform.py::TestLaunchersStayPosix::test_launcher_has_lf_endings_and_a_shebang[Launch Dashboard.command]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_cross_platform.py::TestLaunchersStayPosix::test_launcher_has_lf_endings_and_a_shebang[Update System.command]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_cross_platform.py::TestLaunchersStayPosix::test_launcher_is_committed_executable[Connect To GitHub.command]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_cross_platform.py::TestLaunchersStayPosix::test_launcher_is_committed_executable[Launch Dashboard.command]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_cross_platform.py::TestLaunchersStayPosix::test_launcher_is_committed_executable[Update System.command]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_cross_platform.py::TestLaunchersStayPosix::test_launchers_never_touch_operator_state[Connect To GitHub.command]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_cross_platform.py::TestLaunchersStayPosix::test_launchers_never_touch_operator_state[Launch Dashboard.command]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_cross_platform.py::TestLaunchersStayPosix::test_launchers_never_touch_operator_state[Update System.command]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_cross_platform.py::TestLaunchersStayPosix::test_updater_detects_a_zip_extract_before_pulling",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_cross_platform.py::TestLaunchersStayPosix::test_updater_is_valid_bash",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_cross_platform.py::TestNoUnguardedWindowsCalls::test_creationflags_is_never_passed_literally",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_cross_platform.py::TestNoUnguardedWindowsCalls::test_platform_constants_are_defined_once",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_cross_platform.py::TestNoUnguardedWindowsCalls::test_windows_binaries_only_appear_under_a_platform_guard",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_cross_platform.py::TestPidLivenessFailsSafe::test_permission_error_counts_as_alive",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_cross_platform.py::TestPidLivenessFailsSafe::test_posix_branch_uses_signal_zero",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_cross_platform.py::TestPidLivenessFailsSafe::test_process_lookup_error_counts_as_dead",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_dashboard_db_resilience.py::test_console_never_holds_the_store_open",
+      "outcome": "skipped"
+    },
+    {
+      "id": "tests/test_dashboard_db_resilience.py::test_console_renders_while_store_is_write_locked",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_dashboard_db_resilience.py::test_console_says_why_the_numbers_are_stale",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_dashboard_db_resilience.py::test_normal_path_still_queries_the_store",
+      "outcome": "skipped"
+    },
+    {
+      "id": "tests/test_dashboard_db_resilience.py::test_reruns_stay_cheap_under_the_lock",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_db_contention.py::test_plain_duckdb_connect_fails_immediately",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_db_contention.py::test_reads_are_never_blocked_by_other_readers",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_db_contention.py::test_writer_still_reports_a_genuinely_held_store",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_db_contention.py::test_writer_waits_out_a_brief_hold",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_execution_engine.py::TestExecutionEngine::test_insufficient_bars_skipped",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_execution_engine.py::TestExecutionEngine::test_kill_switch_blocks_all",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_execution_engine.py::TestExecutionEngine::test_max_positions_cap",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_execution_engine.py::TestExecutionEngine::test_scan_dry_run_no_orders",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_execution_engine.py::TestExecutionEngine::test_scan_enters_on_uptrend",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_execution_engine.py::TestExecutionEngine::test_scan_exits_on_downtrend",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_execution_engine.py::TestExecutionEngine::test_scan_hold_when_aligned",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_execution_engine.py::TestExecutionEngine::test_scan_result_summary",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_execution_engine.py::TestSignalAdapter::test_compute_exit_order",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_execution_engine.py::TestSignalAdapter::test_compute_stop_no_atr",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_execution_engine.py::TestSignalAdapter::test_compute_stop_target",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_execution_engine.py::TestSignalAdapter::test_compute_stop_target_capped",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_execution_engine.py::TestSignalAdapter::test_evaluate_downtrend_flat",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_execution_engine.py::TestSignalAdapter::test_evaluate_no_bars",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_execution_engine.py::TestSignalAdapter::test_evaluate_uptrend_strategy",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_execution_engine.py::TestSignalAdapter::test_plan_to_order",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_execution_engine.py::TestSignalAdapter::test_signal_to_plan_flat_signal",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_execution_engine.py::TestSignalAdapter::test_signal_to_plan_valid",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_execution_engine.py::TestTrailingStop::test_atr_trail_computes_stop",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_execution_engine.py::TestTrailingStop::test_golden_rule_never_moves_down",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_execution_engine.py::TestTrailingStop::test_hwm_updates_on_new_high",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_execution_engine.py::TestTrailingStop::test_manager_needs_order_modify",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_execution_engine.py::TestTrailingStop::test_manager_register_and_update",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_execution_engine.py::TestTrailingStop::test_manager_summary",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_execution_engine.py::TestTrailingStop::test_manager_unregister",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_execution_engine.py::TestTrailingStop::test_percent_trail_computes_stop",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_execution_engine.py::TestTrailingStop::test_position_initial_state",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_execution_engine.py::TestTrailingStop::test_protected_pnl",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_execution_engine.py::TestTrailingStop::test_ratchet_only_moves_up",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_execution_engine.py::TestTrailingStop::test_stop_triggered_when_price_hits",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factor_strategy.py::TestAdapterHook::test_no_bars_still_short_circuits_before_the_hook",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factor_strategy.py::TestAdapterHook::test_plain_strategies_are_untouched",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factor_strategy.py::TestAdapterHook::test_symbol_aware_hook_wins_when_present",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factor_strategy.py::TestEngineRefreshHook::test_plain_strategies_need_no_refresh",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factor_strategy.py::TestEngineRefreshHook::test_refresh_failure_aborts_the_scan_loudly",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factor_strategy.py::TestEngineRefreshHook::test_refresh_is_called_once_per_scan",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factor_strategy.py::TestPositionCapWithBasketSelection::test_cap_resets_between_scans",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factor_strategy.py::TestPositionCapWithBasketSelection::test_dry_run_respects_the_cap",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factor_strategy.py::TestPositionCapWithBasketSelection::test_overflow_is_reported_as_a_reason_not_dropped",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factor_strategy.py::TestSelectionSemantics::test_describe_names_the_sizing_mismatch",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factor_strategy.py::TestSelectionSemantics::test_describe_on_empty_selection_says_no_orders",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factor_strategy.py::TestSelectionSemantics::test_plain_target_weight_is_refused",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factor_strategy.py::TestSelectionSemantics::test_selected_symbol_gets_full_weight",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factor_strategy.py::TestSelectionSemantics::test_unselected_symbol_gets_zero",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factor_strategy.py::TestStaleness::test_empty_selection_means_nothing_is_bought",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factor_strategy.py::TestStaleness::test_stale_selection_is_not_ok",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_ic.py::test_dates_with_too_few_valid_symbols_are_excluded",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_ic.py::test_forward_returns_horizon_2",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_ic.py::test_forward_returns_is_shifted_pct_change",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_ic.py::test_perfectly_inverse_factor_has_ic_near_negative_one",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_ic.py::test_perfectly_predictive_factor_has_ic_near_one",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_ic.py::test_summarize_computes_mean_std_tstat_hit_rate",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_ic.py::test_summarize_handles_empty_series",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_ic.py::test_verdict_flags_informal_tstat_and_points_to_multiplicity_tools",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_ic.py::test_verdict_flags_too_few_observations",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_ops.py::test_as_float_normalises_integer_columns",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_ops.py::test_decay_linear_weights_recent_days_more",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_ops.py::test_delta_is_value_minus_d_periods_ago",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_ops.py::test_rank_is_percentile_across_symbols_per_row",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_ops.py::test_safe_div_floors_near_zero_denominators_instead_of_producing_inf",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_ops.py::test_safe_div_is_unchanged_for_ordinary_denominators",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_ops.py::test_scale_normalises_gross_exposure_per_row",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_ops.py::test_signed_power_preserves_sign_through_fractional_powers",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_ops.py::test_ts_argmax_counts_periods_back_from_today",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_ops.py::test_ts_argmin_counts_periods_back_from_today",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_ops.py::test_ts_corr_and_ts_cov_over_a_perfectly_linear_relationship",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_ops.py::test_ts_mean_std_max_min_over_a_known_window",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_ops.py::test_ts_rank_is_percentile_of_todays_value_in_its_own_history",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_ops.py::test_vwap_is_the_india_typical_price",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_ops.py::test_zscore_handles_zero_cross_sectional_variance",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_ops.py::test_zscore_is_mean_zero_across_symbols_per_row",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_panel.py::TestBuildPanel::test_builds_a_wide_panel_with_vwap",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_panel.py::TestBuildPanel::test_dates_are_the_intersection_not_the_union",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_panel.py::TestBuildPanel::test_default_lock_is_the_real_committed_manifest",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_panel.py::TestBuildPanel::test_low_coverage_symbol_is_dropped_and_reported",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_panel.py::TestBuildPanel::test_missing_symbol_is_dropped_and_reported_not_hidden",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_panel.py::TestBuildPanel::test_panel_getitem_matches_data_dict",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_panel.py::TestBuildPanel::test_refuses_a_span_touching_the_locked_test_set",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_panel.py::TestBuildPanel::test_refuses_when_fewer_than_two_symbols_clear_coverage",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_panel.py::TestBuildPanel::test_refuses_when_no_symbol_has_any_bars",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_academic_low_vol_is_negative_of_realised_volatility",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_academic_momentum_and_reversal_use_the_documented_windows",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_alpha101_101_matches_its_formula_on_a_tiny_panel",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_every_alpha_computes_and_is_causal[academic_low_vol_60]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_every_alpha_computes_and_is_causal[academic_momentum_12m1m]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_every_alpha_computes_and_is_causal[academic_reversal_1m]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_every_alpha_computes_and_is_causal[alpha101_001]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_every_alpha_computes_and_is_causal[alpha101_002]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_every_alpha_computes_and_is_causal[alpha101_003]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_every_alpha_computes_and_is_causal[alpha101_004]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_every_alpha_computes_and_is_causal[alpha101_005]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_every_alpha_computes_and_is_causal[alpha101_006]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_every_alpha_computes_and_is_causal[alpha101_007]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_every_alpha_computes_and_is_causal[alpha101_009]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_every_alpha_computes_and_is_causal[alpha101_011]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_every_alpha_computes_and_is_causal[alpha101_012]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_every_alpha_computes_and_is_causal[alpha101_013]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_every_alpha_computes_and_is_causal[alpha101_023]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_every_alpha_computes_and_is_causal[alpha101_026]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_every_alpha_computes_and_is_causal[alpha101_028]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_every_alpha_computes_and_is_causal[alpha101_041]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_every_alpha_computes_and_is_causal[alpha101_054]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_every_alpha_computes_and_is_causal[alpha101_101]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_every_alpha_computes_and_is_causal[tech_cntp20]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_every_alpha_computes_and_is_causal[tech_cntp5]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_every_alpha_computes_and_is_causal[tech_cntp60]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_every_alpha_computes_and_is_causal[tech_klen]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_every_alpha_computes_and_is_causal[tech_klow]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_every_alpha_computes_and_is_causal[tech_kmid]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_every_alpha_computes_and_is_causal[tech_kup]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_every_alpha_computes_and_is_causal[tech_ma20]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_every_alpha_computes_and_is_causal[tech_ma5]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_every_alpha_computes_and_is_causal[tech_ma60]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_every_alpha_computes_and_is_causal[tech_roc20]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_every_alpha_computes_and_is_causal[tech_roc5]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_every_alpha_computes_and_is_causal[tech_roc60]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_every_alpha_computes_and_is_causal[tech_rsv20]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_every_alpha_computes_and_is_causal[tech_rsv5]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_every_alpha_computes_and_is_causal[tech_rsv60]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_every_alpha_computes_and_is_causal[tech_std20]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_every_alpha_computes_and_is_causal[tech_std5]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_every_alpha_computes_and_is_causal[tech_std60]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_every_alpha_computes_and_is_causal[tech_vstd20]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_every_alpha_computes_and_is_causal[tech_vstd5]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_every_spec_has_a_citation_and_positive_warmup",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_expected_families_present",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_no_duplicate_ids",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_registry_has_the_expected_curated_size",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_technical_kmid_klen_kup_klow_on_a_hand_built_candle",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_factors_zoo.py::test_unknown_alpha_id_raises_with_a_helpful_message",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_futures_options.py::test_bs_price_textbook",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_futures_options.py::test_bull_call_spread_payoff",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_futures_options.py::test_chain_filters_and_sorts",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_futures_options.py::test_expiry_day_and_bad_inputs_refused",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_futures_options.py::test_front_contract_refuses_stale_chain",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_futures_options.py::test_front_contract_rolls_near_expiry",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_futures_options.py::test_fut_leg_contributes_pure_delta",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_futures_options.py::test_greeks_textbook_and_signs",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_futures_options.py::test_implied_vol_round_trip_and_bounds",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_futures_options.py::test_mtm_daily_flows_and_settlement_identity",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_futures_options.py::test_put_call_parity",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_futures_options.py::test_short_position_signs",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_futures_options.py::test_straddle_and_position_greeks",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_gap.py::test_buy_gap_positive_when_live_pays_more",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_gap.py::test_coverage_counts_days_and_kinds",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_gap.py::test_missing_next_bar_is_reported_not_dropped",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_gap.py::test_non_fills_are_ignored",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_gap.py::test_sell_gap_sign_flips",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_gap.py::test_summarize_stats_and_empty",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_gtt.py::test_bad_legs_refused",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_gtt.py::test_delete_is_gated_too",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_gtt.py::test_dry_run_never_touches_kite_even_when_armed",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_gtt.py::test_from_trade_plan_builds_protective_oco",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_gtt.py::test_from_trade_plan_refuses_short",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_gtt.py::test_gtt_and_live_order_arms_are_independent",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_gtt.py::test_gtt_gate_arms_only_on_exact_string",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_gtt.py::test_gtt_gate_off_by_default",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_gtt.py::test_gtt_gate_sloppy_values_do_not_arm[ I_UNDERSTAND_GTT_PLACES_REAL_ORDERS]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_gtt.py::test_gtt_gate_sloppy_values_do_not_arm[1]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_gtt.py::test_gtt_gate_sloppy_values_do_not_arm[I_UNDERSTAND]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_gtt.py::test_gtt_gate_sloppy_values_do_not_arm[i_understand_gtt_places_real_orders]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_gtt.py::test_gtt_gate_sloppy_values_do_not_arm[true]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_gtt.py::test_gtt_gate_sloppy_values_do_not_arm[yes]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_gtt.py::test_oco_payload_is_exact_and_ordered",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_gtt.py::test_oco_triggers_must_straddle_ltp",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_gtt.py::test_real_placement_blocked_without_arm",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_gtt.py::test_real_placement_works_only_armed_and_explicit",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_gtt.py::test_single_leg_plan_validates_and_renders",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_gtt.py::test_sync_gtts_idempotent_per_fetch_and_latest_book",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_gtt.py::test_trigger_too_close_to_ltp_refused",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_india_factors.py::test_alpha_annualization_compounds",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_india_factors.py::test_collinear_factors_are_refused_not_silently_fitted",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_india_factors.py::test_filename_pins_the_release",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_india_factors.py::test_genuine_alpha_is_detected",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_india_factors.py::test_matches_iima_published_annualized_figures",
+      "outcome": "skipped"
+    },
+    {
+      "id": "tests/test_india_factors.py::test_only_overlapping_dates_are_used",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_india_factors.py::test_percentages_are_converted_to_fractions_once",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_india_factors.py::test_pure_momentum_strategy_shows_no_alpha_only_wml_beta",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_india_factors.py::test_recovers_a_known_alpha_and_beta_exactly",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_india_factors.py::test_release_is_carried_on_the_result",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_india_factors.py::test_rows_are_sorted_by_date",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_india_factors.py::test_rows_with_any_na_are_dropped_not_zero_filled",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_india_factors.py::test_too_few_observations_is_refused",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_indicators.py::test_atr_constant_true_range",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_indicators.py::test_atr_uses_gap_from_prev_close",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_indicators.py::test_bollinger_constant_series_bands_collapse",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_indicators.py::test_bollinger_known_sd",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_indicators.py::test_dirty_input_refused_loudly",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_indicators.py::test_ema_seeds_with_sma_then_smooths",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_indicators.py::test_macd_constant_series_is_zero_after_warmup",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_indicators.py::test_macd_refuses_fast_ge_slow",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_indicators.py::test_rsi_extremes",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_indicators.py::test_rsi_flat_series_avoids_div_zero",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_indicators.py::test_rsi_warmup_is_none",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_indicators.py::test_sma_hand_computed",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_indicators.py::test_sma_window_one_is_identity",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_indicators.py::test_vwap_single_bar_is_typical_price",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_indicators.py::test_vwap_weights_by_volume",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_instruments_snapshot_atomicity.py::test_a_failed_sync_commits_nothing",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_instruments_snapshot_atomicity.py::test_an_incomplete_snapshot_can_be_topped_up",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_instruments_snapshot_atomicity.py::test_duplicate_rows_in_one_dump_do_not_break_the_sync",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_instruments_snapshot_atomicity.py::test_empty_dump_is_a_no_op",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_instruments_snapshot_atomicity.py::test_resyncing_the_same_day_is_idempotent",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_instruments_snapshot_atomicity.py::test_snapshot_lands_completely",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_instruments_snapshot_atomicity.py::test_sync_is_fast_enough_to_run_inside_a_backfill",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_journal_attribution_improvement.py::TestAttribution::test_empty_is_safe",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_journal_attribution_improvement.py::TestAttribution::test_fifo_round_trips",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_journal_attribution_improvement.py::TestAttribution::test_report_aggregates",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_journal_attribution_improvement.py::TestGatedImprovement::test_deeper_drawdown_rejected_even_with_sharpe",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_journal_attribution_improvement.py::TestGatedImprovement::test_noise_uplift_rejected",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_journal_attribution_improvement.py::TestGatedImprovement::test_promotion_requires_all_gates",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_journal_attribution_improvement.py::TestGatedImprovement::test_small_sample_rejected",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_journal_attribution_improvement.py::TestGatedImprovement::test_version_log_tracks_latest_promoted",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_journal_attribution_improvement.py::TestGatedImprovement::test_vibes_based_proposals_refused",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_journal_attribution_improvement.py::TestJournal::test_journal_is_append_only",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_journal_attribution_improvement.py::TestJournal::test_run_and_trades_logged_and_queryable",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_kill_switch_live_broker.py::test_daily_cap_blocks",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_kill_switch_live_broker.py::test_kill_switch_blocks_even_when_armed",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_kill_switch_live_broker.py::test_kill_switch_engage_persist_and_refuse",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_kill_switch_live_broker.py::test_limit_and_sl_require_prices",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_kill_switch_live_broker.py::test_market_order_carries_protection_and_tag",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_kill_switch_live_broker.py::test_order_spacing_enforced",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_kill_switch_live_broker.py::test_priced_order_types_do_not_carry_market_protection",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_kill_switch_live_broker.py::test_reads_are_ungated_and_mapped",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_kill_switch_live_broker.py::test_retried_send_returns_original_never_reexecutes",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_kill_switch_live_broker.py::test_slm_order_carries_market_protection",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_kill_switch_live_broker.py::test_tripwire_engages_on_breach_only",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_kill_switch_live_broker.py::test_unarmed_environment_refuses",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_kill_switch_live_broker.py::test_unknown_outcome_duplicate_demands_reconciliation",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_kite_auth.py::TestCredentials::test_missing_env_fails_loudly",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_kite_auth.py::TestCredentials::test_present_env_loads_without_printing",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_kite_auth.py::TestTokenStaleness::test_corrupt_cache_without_date_refused",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_kite_auth.py::TestTokenStaleness::test_missing_cache_refused_with_instructions",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_kite_auth.py::TestTokenStaleness::test_todays_token_accepted",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_kite_auth.py::TestTokenStaleness::test_yesterdays_token_refused",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_leakage.py::TestAssertCausalPanel::test_a_gap_wider_than_the_leak_can_miss_it",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_leakage.py::TestAssertCausalPanel::test_honest_operator_passes_at_the_tightest_gap",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_leakage.py::TestAssertCausalPanel::test_leaky_operator_is_caught_at_the_tightest_gap",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_leakage.py::TestAssertCausalPanel::test_nan_warmup_rows_are_treated_as_equal",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_leakage.py::TestAssertCausalPanel::test_probe_must_precede_perturbation",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_leakage.py::test_alignment_is_enforced",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_leakage.py::test_causal_feature_has_no_violations",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_leakage.py::test_causal_feature_passes_assert",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_leakage.py::test_leaky_feature_is_detected",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_leakage.py::test_leaky_feature_trips_assert",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_marketdata_instruments_historical.py::test_chunk_ranges_respects_interval_caps",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_marketdata_instruments_historical.py::test_chunk_refuses_unknown_interval_and_reversed_range",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_marketdata_instruments_historical.py::test_chunk_single_day_and_day_interval",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_marketdata_instruments_historical.py::test_daily_cross_check_clean_when_feeds_agree",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_marketdata_instruments_historical.py::test_daily_cross_check_flags_divergence",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_marketdata_instruments_historical.py::test_ingest_chunks_and_is_idempotent",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_marketdata_instruments_historical.py::test_ingest_strips_timezone_and_keeps_oi",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_marketdata_instruments_historical.py::test_lookup_and_expiry_parsing",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_marketdata_instruments_historical.py::test_overlap_days_zero_when_ranges_disjoint",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_marketdata_instruments_historical.py::test_search_on_empty_store_is_empty",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_marketdata_instruments_historical.py::test_search_scopes_to_one_snapshot_and_exchange",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_marketdata_instruments_historical.py::test_sync_is_idempotent_and_dated",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_marketdata_throttle_quotes.py::test_back_to_back_calls_are_spaced_to_the_limit",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_marketdata_throttle_quotes.py::test_empty_keys_refused",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_marketdata_throttle_quotes.py::test_fetch_ltp",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_marketdata_throttle_quotes.py::test_fetch_quotes_missing_depth_gives_none_not_zero",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_marketdata_throttle_quotes.py::test_fetch_quotes_parses_depth_and_ohlc",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_marketdata_throttle_quotes.py::test_fetch_quotes_unknown_key_absent_from_result",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_marketdata_throttle_quotes.py::test_first_call_never_waits",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_marketdata_throttle_quotes.py::test_negative_interval_refused",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_marketdata_throttle_quotes.py::test_no_wait_when_enough_time_already_passed",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_marketdata_throttle_quotes.py::test_partial_elapsed_waits_only_the_remainder",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_marketdata_throttle_quotes.py::test_quotes_batched_and_throttled_per_batch",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_multiple_testing.py::test_an_overwhelming_winner_is_found_by_all_three",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_multiple_testing.py::test_block_size_grows_with_sample_and_never_below_two",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_multiple_testing.py::test_bootstrap_p_values_are_never_exactly_zero",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_multiple_testing.py::test_constant_outperformance_is_refused_as_a_construction_bug",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_multiple_testing.py::test_empty_inputs_are_refused",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_multiple_testing.py::test_identical_candidates_are_never_declared_superior",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_multiple_testing.py::test_misaligned_series_is_refused_not_truncated",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_multiple_testing.py::test_null_verdict_says_the_search_produced_it",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_multiple_testing.py::test_padding_with_rubbish_hurts_reality_check_more_than_spa",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_multiple_testing.py::test_results_are_reproducible_for_a_fixed_seed",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_multiple_testing.py::test_size_under_the_null_stays_in_a_sane_band",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_multiple_testing.py::test_spa_p_values_bracket_the_consistent_one",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_multiple_testing.py::test_verdicts_never_stop_at_one_p_value",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_paper_broker.py::TestPessimisticFills::test_buy_fills_at_ask_plus_slippage",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_paper_broker.py::TestPessimisticFills::test_charges_hit_cash",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_paper_broker.py::TestPessimisticFills::test_no_depth_falls_back_to_ltp_still_worse",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_paper_broker.py::TestPessimisticFills::test_sell_fills_at_bid_minus_slippage",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_paper_broker.py::TestReconnect::test_disconnect_opens_gap_and_resubscribes",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_paper_broker.py::TestReconnect::test_gives_up_after_max_retries",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_paper_broker.py::TestReconnect::test_retries_with_backoff_then_resubscribes",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_paper_broker.py::TestSafetyRails::test_idempotent_retry_never_double_fills",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_paper_broker.py::TestSafetyRails::test_no_tick_at_all_rejects",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_paper_broker.py::TestSafetyRails::test_stale_tick_rejects_order",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_paper_broker.py::TestSafetyRails::test_unprotected_market_order_rejected_like_zerodha",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_paper_broker.py::TestTickBars::test_bar_closes_on_first_tick_of_next_window",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_paper_broker.py::TestTickBars::test_bar_spanning_gap_is_suspect",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_paper_persistence.py::TestPaperFillLog::test_append_only_with_timestamps",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_paper_persistence.py::TestPersistence::test_flat_positions_not_persisted",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_paper_persistence.py::TestPersistence::test_load_missing_returns_false_keeps_defaults",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_paper_persistence.py::TestPersistence::test_state_roundtrip",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_portfolio_backtest.py::test_factor_known_only_at_signal_date_cannot_affect_earlier_equity",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_portfolio_backtest.py::test_first_rebalance_from_cash_has_full_turnover",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_portfolio_backtest.py::test_long_only_selects_top_quantile_by_factor_rank",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_portfolio_backtest.py::test_market_neutral_is_dollar_neutral",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_portfolio_backtest.py::test_missing_factor_row_is_skipped_not_crashed",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_portfolio_backtest.py::test_outgoing_basket_earns_the_overnight_gap_not_the_incoming_one",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_portfolio_backtest.py::test_shorting_outside_equity_delivery_is_refused",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_portfolio_backtest.py::test_single_rebalance_overnight_and_intraday_attribution",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_portfolio_backtest.py::test_summarize_portfolio_has_no_misleading_trade_stats",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_portfolio_backtest.py::test_too_few_candidates_is_skipped_not_silently_absorbed",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_portfolio_backtest.py::test_unchanged_basket_costs_nothing_on_the_next_rebalance",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_portfolio_risk.py::test_allocation_empty_book",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_portfolio_risk.py::test_allocation_weights_and_t1",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_portfolio_risk.py::test_concentration_hhi",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_portfolio_risk.py::test_correlation_matrix_upper_triangle_and_alignment",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_portfolio_risk.py::test_drift_flags_both_directions_and_missing_symbols",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_portfolio_risk.py::test_drift_refuses_overcommitted_targets",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_portfolio_risk.py::test_historical_var_is_the_tail_loss",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_portfolio_risk.py::test_kelly_capped_and_floored",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_portfolio_risk.py::test_movers_best_and_worst",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_portfolio_risk.py::test_pearson_perfect_and_inverse",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_portfolio_risk.py::test_plan_cash_binds_before_risk_budget",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_portfolio_risk.py::test_plan_long_hand_computed",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_portfolio_risk.py::test_plan_refuses_target_on_losing_side",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_portfolio_risk.py::test_plan_short_direction_inferred",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_portfolio_risk.py::test_plan_unaffordable_is_loud",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_portfolio_risk.py::test_portfolio_volatility_diversification_helps",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_portfolio_risk.py::test_portfolio_volatility_single_asset_matches_series_sd",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_portfolio_risk.py::test_position_size_fixed_fractional",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_portfolio_risk.py::test_position_size_refuses_reckless_risk",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_portfolio_risk.py::test_position_size_rounds_down_and_can_be_zero",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_portfolio_risk.py::test_rolling_correlation_warmup_and_window",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_portfolio_risk.py::test_simple_returns_and_validation",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_settings_and_trials.py::TestLiveOrdersFlag::test_common_truthy_values_do_not_arm",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_settings_and_trials.py::TestLiveOrdersFlag::test_disabled_by_default",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_settings_and_trials.py::TestLiveOrdersFlag::test_gate_raises_when_disarmed",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_settings_and_trials.py::TestLiveOrdersFlag::test_magic_string_arms",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_settings_and_trials.py::TestTrialsRegistry::test_every_record_is_timestamped_json",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_settings_and_trials.py::TestTrialsRegistry::test_records_are_appended_never_rewritten",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_sma_and_metrics.py::TestMetrics::test_flat_curve_has_zero_sharpe_not_nan",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_sma_and_metrics.py::TestMetrics::test_total_return_and_drawdown_hand_computed",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_sma_and_metrics.py::TestMetrics::test_trade_stats_from_realized_deltas",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_sma_and_metrics.py::TestSmaCross::test_LEAK_sma_weight_is_causal",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_sma_and_metrics.py::TestSmaCross::test_golden_cross_goes_long_death_cross_exits",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_sma_and_metrics.py::TestSmaCross::test_invalid_windows_rejected",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_sma_and_metrics.py::TestSmaCross::test_warmup_is_flat",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_splits_dsr_lock.py::TestCombinatorialPurged::test_every_group_appears_as_test_the_same_number_of_times",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_splits_dsr_lock.py::TestCombinatorialPurged::test_n_backtest_paths_matches_the_known_formula",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_splits_dsr_lock.py::TestCombinatorialPurged::test_rejects_bad_group_counts",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_splits_dsr_lock.py::TestCombinatorialPurged::test_train_and_test_are_disjoint_and_purged",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_splits_dsr_lock.py::TestCombinatorialPurged::test_yields_C_n_k_splits",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_splits_dsr_lock.py::TestDeflatedSharpe::test_expected_max_grows_with_trials",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_splits_dsr_lock.py::TestDeflatedSharpe::test_more_trials_deflate_more",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_splits_dsr_lock.py::TestDeflatedSharpe::test_negative_skew_fat_tails_deflate",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_splits_dsr_lock.py::TestDeflatedSharpe::test_short_track_deflates_more",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_splits_dsr_lock.py::TestDeflatedSharpe::test_single_trial_benchmark_is_zero",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_splits_dsr_lock.py::TestLock::test_clamp_end_stops_at_boundary_eve",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_splits_dsr_lock.py::TestLock::test_committed_manifest_is_intact",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_splits_dsr_lock.py::TestLock::test_final_evaluation_is_single_use",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_splits_dsr_lock.py::TestLock::test_research_before_boundary_allowed",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_splits_dsr_lock.py::TestLock::test_research_beyond_boundary_raises",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_splits_dsr_lock.py::TestProbabilityOfBacktestOverfitting::test_deterministic_for_fixed_input",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_splits_dsr_lock.py::TestProbabilityOfBacktestOverfitting::test_high_pbo_verdict_calls_selection_untrustworthy",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_splits_dsr_lock.py::TestProbabilityOfBacktestOverfitting::test_one_persistently_better_candidate_gives_low_pbo",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_splits_dsr_lock.py::TestProbabilityOfBacktestOverfitting::test_pure_noise_candidates_give_pbo_near_one_half",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_splits_dsr_lock.py::TestProbabilityOfBacktestOverfitting::test_rejects_misaligned_lengths",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_splits_dsr_lock.py::TestProbabilityOfBacktestOverfitting::test_rejects_odd_n_groups",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_splits_dsr_lock.py::TestProbabilityOfBacktestOverfitting::test_rejects_single_candidate",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_splits_dsr_lock.py::TestPurgedKFold::test_embargo_purges_both_sides_of_test_block",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_splits_dsr_lock.py::TestPurgedKFold::test_every_index_tested_exactly_once",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_splits_dsr_lock.py::TestWalkForward::test_anchored_grows_rolling_slides",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_splits_dsr_lock.py::TestWalkForward::test_never_yields_partial_test_window",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_splits_dsr_lock.py::TestWalkForward::test_test_windows_tile_without_overlap",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_splits_dsr_lock.py::TestWalkForward::test_train_always_precedes_test_with_embargo_gap",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_static_ip_gate.py::TestCapabilitiesRecord::test_interfaces_are_abstract",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_static_ip_gate.py::TestCapabilitiesRecord::test_kite_declares_the_two_mandatory_frictions",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_static_ip_gate.py::TestCapabilitiesRecord::test_span_limits_match_the_historical_module",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_static_ip_gate.py::TestStaticIpGate::test_configured_static_ip_allows_the_order",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_static_ip_gate.py::TestStaticIpGate::test_default_broker_is_unchanged",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_static_ip_gate.py::TestStaticIpGate::test_empty_static_ip_is_treated_as_missing",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_static_ip_gate.py::TestStaticIpGate::test_expired_arm_blocks_before_the_ip_check",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_static_ip_gate.py::TestStaticIpGate::test_strict_broker_refuses_without_a_static_ip",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_static_ip_gate.py::TestStaticIpGate::test_the_arm_is_still_checked_first",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_store_adjusted_bars.py::TestAdjustedBars::test_LEAK_action_invisible_before_ex_date",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_store_adjusted_bars.py::TestAdjustedBars::test_actions_are_idempotent_inserts",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_store_adjusted_bars.py::TestAdjustedBars::test_pre_ex_prices_halved_post_ex_untouched",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_store_adjusted_bars.py::TestAdjustedBars::test_raw_columns_never_mutated",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_store_and_universe.py::TestBars::test_ingest_roundtrip",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_store_and_universe.py::TestBars::test_reingest_is_idempotent",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_store_and_universe.py::TestPITUniverse::test_membership_as_of_excludes_past_and_future_members",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_strategy_library.py::TestBollingerSqueeze::test_contraction_then_expansion_enters",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_strategy_library.py::TestBollingerSqueeze::test_invalid_params_rejected",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_strategy_library.py::TestBollingerSqueeze::test_warmup_returns_flat",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_strategy_library.py::TestDonchianBreakout::test_breakdown_exits",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_strategy_library.py::TestDonchianBreakout::test_breakout_enters_long",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_strategy_library.py::TestDonchianBreakout::test_invalid_params_rejected",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_strategy_library.py::TestDonchianBreakout::test_warmup_returns_flat",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_strategy_library.py::TestEmaAtrTrend::test_downtrend_stays_flat",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_strategy_library.py::TestEmaAtrTrend::test_invalid_params_rejected",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_strategy_library.py::TestEmaAtrTrend::test_sideways_with_low_vol_stays_flat",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_strategy_library.py::TestEmaAtrTrend::test_uptrend_enters_long",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_strategy_library.py::TestEmaAtrTrend::test_warmup_returns_flat",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_strategy_library.py::TestEmaAtrTrend::test_weight_always_in_range",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_strategy_library.py::TestLeakageGate::test_engine_run_completes[bb_squeeze]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_strategy_library.py::TestLeakageGate::test_engine_run_completes[donchian]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_strategy_library.py::TestLeakageGate::test_engine_run_completes[ema_atr]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_strategy_library.py::TestLeakageGate::test_engine_run_completes[momentum]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_strategy_library.py::TestLeakageGate::test_engine_run_completes[rsi_revert]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_strategy_library.py::TestLeakageGate::test_no_future_peek[bb_squeeze-params3]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_strategy_library.py::TestLeakageGate::test_no_future_peek[donchian-params1]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_strategy_library.py::TestLeakageGate::test_no_future_peek[ema_atr-params0]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_strategy_library.py::TestLeakageGate::test_no_future_peek[momentum-params4]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_strategy_library.py::TestLeakageGate::test_no_future_peek[rsi_revert-params2]",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_strategy_library.py::TestMomentum::test_invalid_params_rejected",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_strategy_library.py::TestMomentum::test_negative_momentum_stays_flat",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_strategy_library.py::TestMomentum::test_positive_momentum_enters",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_strategy_library.py::TestMomentum::test_warmup_returns_flat",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_strategy_library.py::TestRegistry::test_all_strategies_implement_protocol",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_strategy_library.py::TestRegistry::test_all_strategies_listed",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_strategy_library.py::TestRegistry::test_get_strategy_returns_correct_class",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_strategy_library.py::TestRegistry::test_get_strategy_with_params",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_strategy_library.py::TestRegistry::test_unknown_strategy_raises",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_strategy_library.py::TestRsiMeanReversion::test_invalid_params_rejected",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_strategy_library.py::TestRsiMeanReversion::test_oversold_enters_long",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_strategy_library.py::TestRsiMeanReversion::test_recovered_exits",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_strategy_library.py::TestRsiMeanReversion::test_warmup_returns_flat",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_surveillance.py::TestEngineGuard::test_flagged_entry_is_refused",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_surveillance.py::TestEngineGuard::test_missing_capture_fails_open",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_surveillance.py::TestMerge::test_different_dates_stay_separate",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_surveillance.py::TestMerge::test_output_is_sorted",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_surveillance.py::TestMerge::test_same_symbol_from_two_sources_ors_the_measures",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_surveillance.py::TestParseAsm::test_garbage_payload_yields_nothing_rather_than_raising",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_surveillance.py::TestParseAsm::test_reads_both_buckets",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_surveillance.py::TestParseAsm::test_stage_one_is_not_trade_to_trade",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_surveillance.py::TestParseAsm::test_stage_three_is_trade_to_trade",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_surveillance.py::TestParseBan::test_ban_records_as_gsm_not_asm",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_surveillance.py::TestParseBan::test_empty_text",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_surveillance.py::TestParseBan::test_nil_day_produces_no_flags",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_surveillance.py::TestParseBan::test_numbered_rows_drop_the_ordinals",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_surveillance.py::TestParseBan::test_symbol_list_is_read",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_surveillance.py::TestParseEsm::test_asm_envelope_passed_to_esm_parser_yields_nothing",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_surveillance.py::TestParseEsm::test_every_esm_stage_is_trade_to_trade",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_surveillance.py::TestParseEsm::test_flat_list_shape",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_surveillance.py::TestPersistence::test_coverage_distinguishes_captured_from_clean",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_surveillance.py::TestPersistence::test_other_days_survive_a_recapture",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_surveillance.py::TestPersistence::test_recapture_replaces_that_day_rather_than_duplicating",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_surveillance.py::TestPersistence::test_save_nothing_writes_nothing",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_surveillance.py::TestPersistence::test_save_then_read_back",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_surveillance.py::TestPersistence::test_uncaptured_day_returns_empty_not_error",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_tradeable_universe.py::test_a_continuously_liquid_symbol_gets_one_span",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_tradeable_universe.py::test_a_delisted_symbol_stops_at_its_last_liquid_day",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_tradeable_universe.py::test_a_long_halt_splits_into_two_spans",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_tradeable_universe.py::test_a_recovery_after_illiquidity_must_reearn_qualification",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_tradeable_universe.py::test_a_slide_into_illiquidity_ends_the_span",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_tradeable_universe.py::test_an_ordinary_long_weekend_does_not_split_a_span",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_tradeable_universe.py::test_custom_threshold_is_respected",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_tradeable_universe.py::test_empty_history_is_a_no_op",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_tradeable_universe.py::test_never_liquid_produces_no_spans",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_tradeable_universe.py::test_spans_never_extend_past_the_actual_data",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_tradeable_universe.py::test_too_little_history_never_qualifies",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_universe_fundamentals.py::TestBatchResult::test_to_dict_formats_correctly",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_universe_fundamentals.py::TestFiiDii::test_flow_day_sentiment",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_universe_fundamentals.py::TestFiiDii::test_idempotent_store",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_universe_fundamentals.py::TestFiiDii::test_parse_nse_format",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_universe_fundamentals.py::TestFiiDii::test_store_and_load",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_universe_fundamentals.py::TestFiiDii::test_summarize",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_universe_fundamentals.py::TestFiiDii::test_summarize_insufficient_data",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_universe_fundamentals.py::TestFundamentals::test_fetch_fundamentals_batch",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_universe_fundamentals.py::TestFundamentals::test_parse_kite_quote",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_universe_fundamentals.py::TestFundamentals::test_parse_missing_data",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_universe_fundamentals.py::TestFundamentals::test_quality_score_high",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_universe_fundamentals.py::TestFundamentals::test_quality_score_low",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_universe_fundamentals.py::TestFundamentals::test_quality_score_missing_data",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_universe_fundamentals.py::TestQualityFilter::test_fails_high_debt_stock",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_universe_fundamentals.py::TestQualityFilter::test_fails_negative_earnings",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_universe_fundamentals.py::TestQualityFilter::test_filter_str_can_be_disabled",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_universe_fundamentals.py::TestQualityFilter::test_passes_good_stock",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_universe_fundamentals.py::TestQualityFilter::test_screen_batch",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_universe_fundamentals.py::TestWatchlists::test_duplicate_symbols_rejected",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_universe_fundamentals.py::TestWatchlists::test_empty_symbols_rejected",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_universe_fundamentals.py::TestWatchlists::test_iter_and_contains",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_universe_fundamentals.py::TestWatchlists::test_list_watchlists",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_universe_fundamentals.py::TestWatchlists::test_load_by_name",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_universe_fundamentals.py::TestWatchlists::test_load_nifty50",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_universe_fundamentals.py::TestWatchlists::test_non_string_symbol_rejected",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_universe_fundamentals.py::TestWatchlists::test_not_found_raises",
+      "outcome": "passed"
+    },
+    {
+      "id": "tests/test_universe_fundamentals.py::TestWatchlists::test_save_and_load_custom",
+      "outcome": "passed"
+    }
+  ]
+}

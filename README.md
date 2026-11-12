@@ -2,11 +2,11 @@
 
 Every test run of the EchoNerve systems listed here is published by CI, pass or fail. The code is private; the results are not.
 
-**657 passed · 0 failed · 3 skipped** across 1 system(s). Last run: 2026-11-11T01:25:56Z.
+**657 passed · 0 failed · 3 skipped** across 1 system(s). Last run: 2026-11-12T02:25:48Z.
 
 | System | Status | Passed | Failed | Skipped | Commit | Run (UTC) | Source |
 |---|---|---|---|---|---|---|---|
-| [qtharness](data/qtharness/latest.json) | 🟢 green | 657 | 0 | 3 | `55c538ccee13` | 2026-11-11T01:25:56Z | github-actions |
+| [qtharness](data/qtharness/latest.json) | 🟢 green | 657 | 0 | 3 | `55c538ccee13` | 2026-11-12T02:25:48Z | github-actions |
 
 ## How to read this
 

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-17T04:07:18Z",
+  "updated": "2026-11-18T03:05:19Z",
   "totals": {
     "passed": 657,
     "failed": 0,
@@ -14,11 +14,11 @@
       "failed": 0,
       "skipped": 3,
       "total": 660,
-      "duration_s": 27.59,
+      "duration_s": 26.98,
       "commit": "55c538ccee13",
-      "run_id": "44014854870",
+      "run_id": "44227818948",
       "source": "github-actions",
-      "run_at": "2026-11-17T04:07:18Z",
+      "run_at": "2026-11-18T03:05:19Z",
       "name": "qtharness",
       "about": "Systematic trading research harness for Indian markets (leakage gate, cost model, walk-forward, deflated Sharpe).",
       "code": "private (client work)"

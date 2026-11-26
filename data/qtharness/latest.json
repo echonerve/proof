@@ -6,11 +6,11 @@
     "failed": 0,
     "skipped": 3,
     "total": 660,
-    "duration_s": 27.35,
+    "duration_s": 27.46,
     "commit": "55c538ccee13",
-    "run_id": "45547233308",
+    "run_id": "45750656205",
     "source": "github-actions",
-    "run_at": "2026-11-25T04:31:03Z"
+    "run_at": "2026-11-26T03:43:29Z"
   },
   "counts": {
     "passed": 657,
@@ -19,7 +19,7 @@
     "skipped": 3
   },
   "total": 660,
-  "duration_s": 27.35,
+  "duration_s": 27.46,
   "files": {
     "tests/test_account_reconcile.py": {
       "passed": 9
